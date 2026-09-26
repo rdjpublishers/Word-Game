@@ -554,6 +554,80 @@ header {
 }
 .home-privacy svg { color: var(--correct); flex-shrink: 0; margin-top: 1px; }
 
+/* ---- ORIGINAL CONTENT SECTIONS (AdSense-friendly) ---- */
+.home-section{
+  margin-top:18px;
+  background:var(--card-bg);
+  border:1px solid var(--card-border);
+  border-radius:12px;
+  padding:18px 18px 16px;
+  font-size:.86rem;
+  color:var(--text-dim);
+  line-height:1.65;
+}
+.home-section h2{
+  font-size:.96rem;
+  font-weight:700;
+  color:var(--text);
+  margin-bottom:8px;
+  letter-spacing:-.01em;
+}
+.home-section h3{
+  font-size:.86rem;
+  font-weight:700;
+  color:var(--text);
+  margin:10px 0 4px;
+}
+.home-section p{margin-bottom:8px;color:var(--text-dim);}
+.home-section p:last-child{margin-bottom:0;}
+.home-section ul,.home-section ol{margin:4px 0 8px 1.2rem;display:flex;flex-direction:column;gap:4px;color:var(--text-dim);}
+.home-section li strong{color:var(--text);font-weight:600;}
+.home-section .home-cta{
+  margin-top:14px;
+  padding:10px 14px;
+  background:var(--surface2);
+  border:1px solid var(--card-border);
+  border-radius:10px;
+  color:var(--text);
+  font-weight:500;
+}
+.home-faq{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  margin-top:4px;
+}
+.home-faq-item{
+  border:1px solid var(--card-border);
+  border-radius:10px;
+  overflow:hidden;
+}
+.home-faq-q{
+  width:100%;
+  text-align:left;
+  padding:10px 14px;
+  background:var(--surface2);
+  border:none;
+  cursor:pointer;
+  font-family:inherit;
+  font-size:.84rem;
+  font-weight:600;
+  color:var(--text);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+}
+.home-faq-a{
+  display:block;
+  padding:10px 14px;
+  font-size:.82rem;
+  color:var(--text-dim);
+  line-height:1.6;
+  border-top:1px solid var(--card-border);
+  background:var(--card-bg);
+}
+
 /* ─── ABOUT PAGE ─── */
 .about-hero {
   text-align: center;
@@ -1373,6 +1447,85 @@ header {
     <div class="home-privacy">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
       <div>All game data is stored entirely in your browser. Nothing is ever sent to any server, stored remotely, or seen by anyone else.</div>
+    </div>
+
+    <!-- 1. WHAT IS WORD GAME -->
+    <div class="home-section">
+      <h2>What is Word Game?</h2>
+      <p>Word Game is a <strong>free, browser-based 5-letter word guessing game</strong> made by RDJ Publishers. It runs entirely in your web browser &mdash; there is nothing to download and nothing to install.</p>
+      <p>You can pick between two modes. <strong>Daily mode</strong> gives everyone the same hidden word each day, so you can compare results with friends. <strong>Infinite mode</strong> generates a brand-new random word whenever you want, for as many rounds as you like.</p>
+      <p>No sign-up, no email, no paywall. Open the page and play.</p>
+    </div>
+
+    <!-- 2. HOW TO PLAY -->
+    <div class="home-section">
+      <h2>How to Play</h2>
+      <ol>
+        <li>Look at the empty 5-letter board. Your goal is to guess the hidden word in <strong>6 tries</strong>.</li>
+        <li>Type any valid 5-letter word using the on-screen keyboard (or your own keyboard) and press <strong>Enter</strong>.</li>
+        <li>After each guess, the letters change colour to give you clues:
+          <ul>
+            <li><strong>Green</strong> &mdash; the letter is correct and in the right spot.</li>
+            <li><strong>Yellow</strong> &mdash; the letter is in the word, but in the wrong spot.</li>
+            <li><strong>Gray</strong> &mdash; the letter is not in the word at all.</li>
+          </ul>
+        </li>
+        <li>Use the clues from each guess to narrow down the next one. Solve the word in 6 tries or fewer to win.</li>
+        <li>If you get stuck, you can use your <strong>one-time hint</strong> per round to reveal a hidden letter.</li>
+      </ol>
+    </div>
+
+    <!-- 3. DAILY VS INFINITE -->
+    <div class="home-section">
+      <h2>Daily Mode vs Infinite Mode</h2>
+      <p><strong>Daily mode</strong> gives you one fresh word every day at midnight, shared by every player in the world. It&rsquo;s the mode to play if you want a fair, shared challenge to compare with friends. <strong>Infinite mode</strong> generates a new random word on demand, so you can play as many rounds as you like whenever you want. Infinite mode is great for practice, for warming up before the daily word, or for filling a few minutes of free time.</p>
+    </div>
+
+    <!-- 4. TIPS -->
+    <div class="home-section">
+      <h2>Tips to Improve Your Score</h2>
+      <ul>
+        <li><strong>Start with a strong opener.</strong> Words that mix common vowels (A, E, O) with frequent consonants (T, R, N, S, L) help you find green and yellow letters quickly.</li>
+        <li><strong>Don&rsquo;t reuse grays.</strong> Once a letter is gray, it&rsquo;s out for the rest of the round &mdash; never guess it again.</li>
+        <li><strong>Vary your vowels early.</strong> Most 5-letter words have at least two vowels. If your first word gave you none, the next guess should test new vowels.</li>
+        <li><strong>Watch for double letters.</strong> Many words repeat a letter (e.g., &ldquo;hello&rdquo;). A yellow on a letter might mean it appears more than once.</li>
+        <li><strong>Save the hint for emergencies.</strong> You only get one hint per round. Use it when you&rsquo;re truly stuck, not on a comfortable puzzle.</li>
+        <li><strong>Think of word families.</strong> When you have <em>T</em> green in spot 2 and <em>E</em> green in spot 4, try the pattern: _TEED, _TELL, _TEMS &mdash; it narrows things down fast.</li>
+      </ul>
+    </div>
+
+    <!-- 5. WHY WE BUILT IT -->
+    <div class="home-section">
+      <h2>Why We Built a Free Word Game</h2>
+      <p>RDJ Publishers builds small, useful web tools &mdash; and Word Game is one of them. The goal was simple: a quick, fun puzzle that loads instantly, asks for nothing, and doesn&rsquo;t pester you with sign-ups or notifications. Your stats live in your browser only. No accounts, no tracking, no paywall. Just a clean daily word whenever you want one.</p>
+    </div>
+
+    <!-- 6. FAQ -->
+    <div class="home-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="home-faq">
+        <div class="home-faq-item">
+          <button class="home-faq-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.querySelector('.faq-ic').textContent=this.nextElementSibling.style.display==='none'?'+':'−'"><span>Is Word Game really free?</span><span class="faq-ic" style="color:var(--correct);font-weight:700">−</span></button>
+          <div class="home-faq-a">Yes &mdash; completely free, no hidden charges. The site may show non-intrusive ads to support the project, but the game itself is fully usable without paying anything.</div>
+        </div>
+        <div class="home-faq-item">
+          <button class="home-faq-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.querySelector('.faq-ic').textContent=this.nextElementSibling.style.display==='none'?'+':'−'"><span>Do I need to create an account?</span><span class="faq-ic" style="color:var(--correct);font-weight:700">−</span></button>
+          <div class="home-faq-a">No. There is no account, no email, and nothing to register. Just open the page and play.</div>
+        </div>
+        <div class="home-faq-item">
+          <button class="home-faq-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.querySelector('.faq-ic').textContent=this.nextElementSibling.style.display==='none'?'+':'−'"><span>Is my progress saved?</span><span class="faq-ic" style="color:var(--correct);font-weight:700">−</span></button>
+          <div class="home-faq-a">Yes. Your win streak, guess distribution, and statistics are saved locally in your browser. Nothing is sent to any server, so clearing your browser data will reset your stats.</div>
+        </div>
+        <div class="home-faq-item">
+          <button class="home-faq-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.querySelector('.faq-ic').textContent=this.nextElementSibling.style.display==='none'?'+':'−'"><span>Can I play on mobile?</span><span class="faq-ic" style="color:var(--correct);font-weight:700">−</span></button>
+          <div class="home-faq-a">Yes. Word Game is designed to work on phones, tablets, and desktops. The on-screen keyboard adapts to touch, and the layout fits any screen size.</div>
+        </div>
+        <div class="home-faq-item">
+          <button class="home-faq-q" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'block':'none';this.querySelector('.faq-ic').textContent=this.nextElementSibling.style.display==='none'?'+':'−'"><span>What is the difference between Daily and Infinite mode?</span><span class="faq-ic" style="color:var(--correct);font-weight:700">−</span></button>
+          <div class="home-faq-a"><strong>Daily mode</strong> gives everyone the same one new word each day &mdash; great for sharing and comparing. <strong>Infinite mode</strong> generates a fresh random word on demand, so you can keep playing as long as you like.</div>
+        </div>
+      </div>
+      <div class="home-cta">Ready when you are &mdash; hit <strong>Play Now</strong> and guess today&rsquo;s word in 6 tries.</div>
     </div>
   </div>
 </div>
@@ -2206,11 +2359,21 @@ document.addEventListener('DOMContentLoaded', () => {
   buildKeyboard();
   startGame();
 
-  // Show first-time help
-  if (!localStorage.getItem('wly_seen')) {
-    localStorage.setItem('wly_seen', '1');
-    setTimeout(() => document.getElementById('modal-help').classList.remove('hidden'), 600);
-  }
+  // Land on the home overlay so visitors see the introduction first.
+  // They only reach the game when they tap "Play Now" (or use the menu).
+  openPage('page-home');
+
+  // First-time help is now shown AFTER the user dismisses the home overlay,
+  // so it doesn't compete for attention on first load.
+  const homeEl = document.getElementById('page-home');
+  const showHelpOnce = () => {
+    if (!localStorage.getItem('wly_seen')) {
+      localStorage.setItem('wly_seen', '1');
+      setTimeout(() => document.getElementById('modal-help').classList.remove('hidden'), 300);
+    }
+    homeEl.removeEventListener('click', showHelpOnce);
+  };
+  homeEl.addEventListener('click', showHelpOnce, { once: true });
 
   // Hide loading screen
   requestAnimationFrame(() => {
